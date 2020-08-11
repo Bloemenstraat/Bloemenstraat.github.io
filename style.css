@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Moonglade;
+    src: url('./media/moonglade-font/MoongladeDemoBold-jOzM.ttf');
+}
+
+@font-face {
+    font-family: Futura;
+    src: url('./media/Futura/Futura\ Book.ttf');
+}
+
+@font-face {
+    font-family: poppins-extralight;
+    src: url('./media/Poppins/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: poppins;
+    src: url('./media/Poppins/Poppins-Regular.ttf');
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    list-style: none;
+}
+
+li {
+    padding: 12px;
+    color: whitesmoke;
+    font-family: Moonglade;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover {
+    color: grey;
+}
+
+a:hover {
+    color: grey;
+}
+
+nav {
+    padding-top: 24px;
+}
+
+#landing, #token, #metrics, #faq, .raiders {
+    width: auto;
+    height: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-x: hidden;
+}
+
+#landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(122,148,255);
+    background: linear-gradient(0deg, rgba(122,148,255,1) 0%, rgba(18,26,57,1) 35%, rgba(5,8,23,1) 61%, rgba(0,0,0,1) 100%);
+}
+
+.karen {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 150px ;
+    background-repeat: no-repeat;
+    background-image: url('./media/Girlyell.svg');
+}
+
+#token {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(5,8,23,1) 38%, rgba(18,26,57,1) 61%, rgba(122,148,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+
+#metrics {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#metrics p {
+    font-family: Moonglade;
+    font-size: 4em;
+}
+
+#faq {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.questions {
+    font-family: poppins-extralight;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fa {
+    padding: 12px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: Moonglade;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    margin-bottom: 12px;
+    margin-top: 50px;
+}
+
+h4 {
+    padding: 12px;
+    font-family: Futura;
+    letter-spacing: 0.2em;
+    font-size: 1.4em;
+}
+
+h5 {
+    font-family: Moonglade;
+    letter-spacing: 0.2em;
+}
+
+.description {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.content {
+    width: 33%;
+}
+
+.content p {
+    color: lightgrey;
+    font-family: poppins-extralight, sans-serif;
+    font-size: 0.9em;
+}
+
+.collapsable {
+    width: 50vw;
+    text-align: left;
+    cursor: pointer;
+    font-family: poppins;
+    font-size: 1.1em;
+    background-color: lightgrey;
+    border-bottom: black;
+    padding: 12px 0 12px 12px;
+}
+
+.collapsable:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    float: right;
+    margin-right: 13px;
+    color: white;
+}
+
+.active {
+    background-color: grey;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+
+.answer {
+    width: 50vw;
+    max-height: 0;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.raiders {
+    display: none;
+}
